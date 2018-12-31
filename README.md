@@ -17,7 +17,6 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 ## Execution
 
 * How to run your program?
-
 First, we have to add some constrains to given network topology. Second, modify the code in controller.py to create a desire controller to this topology. To do this, we have to find out which port number at one switch or host connect to which port number at other switch or host. We can find this information in topo.py in the function self.addLink. For example, self.addLink(s1, h1, port1=1, port2=2) means that the port1 of s1 is connect to the port2 of h1. Now we can set the forwrding rule in each switch by modifing the parameter x in the right side of equal sign in "msg.datapath.id = x", "in_port = x", "ipv4_src = x", "ipv4_dst = x" and parameter x within the parenthesis in "actions = [parser.OFPActionOutput(x)]". The x in "msg.datapath.id = x" means the switch id, for example, x = 1 mean switch 1(s1). The x in "in_port = x" means input port. The x in "ipv4_src = x", "ipv4_dst = x" means source ip address and destination address respectively. The x in "actions = [parser.OFPActionOutput(x)]" mean the output port.
 For example, if I want to define a forward rule that if the pocket from h1 to h2 go in to s1 at port 1 and then this pocket will be forward to port 2 of s1. I have to set "msg.datapath.id = 1", "in_port = 1", "ipv4_src = 10.0.0.1", "ipv4_dst = 10.0.0.2", and "actions = [parser.OFPActionOutput(2)]".
 * What is the meaning of the executing command (both Mininet and Ryu controller)?
