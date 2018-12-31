@@ -36,10 +36,9 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 
 ### Tasks
 
-> TODO:
-> * Describe how you finish this work in detail
-
 1. Environment Setup
+
+login to container, clone the git repository and check whether mininet command works.
 
 2. Example of Ryu SDN
 
