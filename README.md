@@ -42,11 +42,19 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 
 2. Example of Ryu SDN
 
+    login to container again, create two terminal window. Run SimpleTopo.py in one termainal then run SimpleController.py in another terminal to check whether it works.
+
 3. Mininet Topology
+
+    Copy the file SimpleTopo.py and rename it into topo.py and add the constrain in this new file. Finally, execute it to check whether it is correct.
 
 4. Ryu Controller
 
+    Copy the file SimpleController.py and rename it into controller.py and modify the code in the way I mention above.
+
 5. Measurement
+
+    Run topo.py with SimpleController.py and controller.py, measure the loss rate, bandwedth by iperf command
 
 ### Discussion
 
