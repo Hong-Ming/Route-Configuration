@@ -24,9 +24,9 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
     About the command "mn --custom topo.py --topo topo --link tc --controller remote". mn is to implement minimet --custom is to define custom topology topo.py, --topo is to set the topology, in this case we use topo, --link set the link parameter, in this case tc, --controller set the controller, in this case we set a remote controller. About the command "ryu-manager SimpleController.py --observe-links" ryu-manager is to implement ryu --observe-links is to observe link discovery event
 * Show the screenshot of using iPerf command in Mininet (both `SimpleController.py` and `controller.py`)
 
-SimpleController.py
+ 1. SimpleController.py
 ![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.13.41%20PM.png)
-controller.py
+ 2. controller.py
 ![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.19.13%20PM.png)
 
 ---
