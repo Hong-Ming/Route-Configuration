@@ -25,6 +25,8 @@ For example, if I want to define a forward rule that if the pocket from h1 to h2
 About the command "mn --custom topo.py --topo topo --link tc --controller remote". mn is to implement minimet --custom is to define custom topology topo.py, --topo is to set the topology, in this case we use topo, --link set the link parameter, in this case tc, --controller set the controller, in this case we set a remote controller. About the command "ryu-manager SimpleController.py --observe-links" ryu-manager is to implement ryu --observe-links is to observe link discovery event
 * Show the screenshot of using iPerf command in Mininet (both `SimpleController.py` and `controller.py`)
 
+![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.13.41%20PM.png)
+![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.19.13%20PM.png)
 
 ---
 ## Description
