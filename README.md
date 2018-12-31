@@ -26,10 +26,10 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 
  1. SimpleController.py
  
-![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.13.41%20PM.png)
+    ![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.13.41%20PM.png)
  2. controller.py
  
-![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.19.13%20PM.png)
+    ![alt text](https://github.com/nctucn/lab3-Hong-Ming/blob/master/Screen%20Shot%202018-12-31%20at%2011.19.13%20PM.png)
 
 ---
 ## Description
