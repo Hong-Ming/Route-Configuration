@@ -54,7 +54,7 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 
 5. Measurement
 
-    Run topo.py with SimpleController.py and controller.py, measure the loss rate, bandwedth by iperf command
+    Run topo.py with SimpleController.py and controller.py, measure the loss rate, bandwedth by iperf command.
 
 ### Discussion
 
