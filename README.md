@@ -107,9 +107,6 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 ---
 ## Contributors
 
-> TODO:
-> * Please replace "`YOUR_NAME`" and "`YOUR_GITHUB_LINK`" into yours
-
 * [Hong-Ming](https://github.com/Hong-Ming)
 * [David Lu](https://github.com/yungshenglu)
 
