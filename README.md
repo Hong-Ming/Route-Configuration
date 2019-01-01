@@ -59,7 +59,6 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 ### Discussion
 
 > TODO:
-> * Answer the following questions
 
 1. Describe the difference between packet-in and packet-out in detail.
 
