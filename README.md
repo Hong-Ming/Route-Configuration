@@ -58,8 +58,6 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 
 ### Discussion
 
-> TODO:
-
 1. Describe the difference between packet-in and packet-out in detail.
 
     Pocket-in is the event that a router get a pocket and redirect it to controller for further process. Pocket-out is the event that the controller send the pocket to desire destination port in router.
