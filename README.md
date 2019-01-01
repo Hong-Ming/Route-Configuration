@@ -71,25 +71,33 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
    
 3. Why is "`(app_manager.RyuApp)`" adding after the declaration of class in `controller.py`?
    
-    app_manager.RyuApp is the base class of ryu application.
+    app_manager.RyuApp is the base class of ryu application, which will load all required ryu application model.
+    
 4. Explain the following code in `controller.py`.
     ```python
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     ```
+    
+    set_ev_cls is a decoder, the arguments in it tells when this decoder should be called. The first argumant indicate for which type of event occure should this docoder be called, in this case is ofp_event.EventOFPPacketIn which means whenever pocket in event occure, the decoder will be called. The second augument indicates the state of the switch, in this case is MAIN_DISPATCHER which means this decoder is called only after negotiation is completed.
 
 5. What is the meaning of “datapath” in `controller.py`?
+
+    Datapath is refer to switch in OpenFlow.
    
 6. Why need to set "`ip_proto=17`" in the flow entry?
+
+    set the ip protocol to 17
    
 7. Compare the differences between the iPerf results of `SimpleController.py` and `controller.py` in detail.
+
+    The iPerf result of Simplecontroller.py has larger loss rate then that of controller.py, it is because the routing path is different. The routing path from h2 to h1 of SimpleController.py going through h2 -> s3 -> s1 -> h1, which has the loss rate 3%, however, controller.py going through h2 -> s3 -> s2 -> s1 -> h1, which has the loss rate 1% + 1% = 2%.
    
 8. Which forwarding rule is better? Why?
 
+    controller.py is better. Because the loss rate from h2 to h1 is lower and also the routing path from h1 to h2 and h2 to h1 are different, which could lower the possibility of congestion. In SimpleController.py, the routing path from h1 to h2 and h2 to h1 are the same, which could cause the congestion occure more frequently. 
+
 ---
 ## References
-
-> TODO: 
-> * Please add your references in the following
 
 * **Ryu SDN**
     * [Ryubook Documentation](https://osrg.github.io/ryu-book/en/html/)
