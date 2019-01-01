@@ -62,11 +62,16 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 > * Answer the following questions
 
 1. Describe the difference between packet-in and packet-out in detail.
+
+    Pocket-in is the event that a router get a pocket and redirect it to controller for further process. Pocket-out is the event that the controller send the pocket to desire destination port in router.
    
 2. What is “table-miss” in SDN?
+
+    When a pocket doesn't match everything in flow table then table-miss happen.
    
 3. Why is "`(app_manager.RyuApp)`" adding after the declaration of class in `controller.py`?
    
+    app_manager.RyuApp is the base class of ryu application.
 4. Explain the following code in `controller.py`.
     ```python
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
